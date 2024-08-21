@@ -1,0 +1,17 @@
+table{
+    border-collapse: collapse;
+    border: 1px solid silver;
+}
+tr{
+    transition: 2s;
+}
+.par{
+    background-color: green;
+}
+.niepar{
+    background-color: yellow;
+}
+.par:hover, .niepar:hover{
+    background-color: blueviolet;
+    color: white;
+}

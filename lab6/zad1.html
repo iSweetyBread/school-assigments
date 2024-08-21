@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css\zad1.css">
+</head>
+<body onclick="sad()">
+    <img id="sad" src="img\sad.png">
+    <h1>Kalkulator</h1>
+    <div>
+        <div>
+            <button id="btn_a" onclick="num_a()">Podaj A</button>
+            <button id="btn_b" onclick="num_b()">Podaj B</button>
+        </div>
+        <div>
+            <button onclick="reset()">Reset</button>
+        </div>
+        <div>
+            <button class="operation" id="btn_add" onclick="calc('+')">+</button>
+            <button class="operation" id="btn_substract" onclick="calc('-')">-</button>
+            <button class="operation" id="btn_multiply" onclick="calc('🞄')">🞄</button>
+            <button class="operation" id="btn_divide" onclick="calc('/')">/</button>
+        </div>
+        <div>
+            <p>Wynik działania: <span id="result"></span></p>
+        </div>
+    </div>
+    <script src="js\zad1.js"></script>
+</body>
+</html>

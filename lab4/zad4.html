@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zad4</title>
+    <link rel="stylesheet" href="css\zad4.css">
+</head>
+<body>
+    <script src="js\zad4.js"></script>
+    <header>
+        <h1>Zgadnij liczbę</h1>
+    </header>
+    <hr>
+    <main>
+        <div class="text1">
+            <p>Gra polega na podaniu przedziału do losowania liczb.</p>
+            <p>Zadaniem jest odgadnięcie wylosowanej liczby.</p>
+        </div>
+        <p class="text2">Podaj przedział losowania</p>
+        <div class="input">
+            <label for="od">Od:</label>
+            <input type="text" name="od" id="od">
+            <label for="do">Do:</label>
+            <input type="text" name="do" id="do">
+            <div class="inputBtn">
+                <button name="rnd" id="rnd" onclick="rng()">Losuj Liczbę</button>
+                <button name="inp" id="inp" onclick="check()">Podaj Liczbę</button>
+            </div>
+        </div>
+        <div class="text3">
+            <p>W systemie zapamiętana jest liczba z przedziału <<b id="odText"></b>...<b id="doText"></b>>.</p>
+            <p>Zadaniem jest odgadnięcie tej liczby.</p>
+        </div>
+    </main>
+</body>
+</html>

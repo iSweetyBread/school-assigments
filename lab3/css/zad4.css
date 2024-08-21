@@ -1,0 +1,30 @@
+li{
+    list-style-type: square;
+}
+#cena{
+    color: red;
+    font-weight: bold;
+}
+.wstep{
+    font-style: italic;
+}
+td img{
+    border: 3px solid blue;
+    height: 700px;
+}
+td img:hover{
+    border: 3px solid red;
+}
+h2{
+    letter-spacing: 5px;
+}
+.opis{
+    font-size: small;
+}
+.po{
+    color: grey;
+}
+body{
+    background-image: url(img\books.png);
+    background-repeat: repeat-y;
+}

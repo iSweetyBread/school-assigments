@@ -1,0 +1,38 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+.end{
+    background-color: saddlebrown;
+    color: white;
+    padding: 3px;
+    text-align: center;
+}
+.main1{
+    background-color: tan;
+    height: 400px;
+    width: 40%;
+}
+.main2{
+    background-color: wheat;
+    height: 400px;
+    width: 20%;
+    display: flex;
+}
+img{
+    margin-right: 20px;
+    height: 40%;
+}
+h4{
+    text-align: center;
+}
+input{
+    margin: 5px;
+}
+li:hover{
+    background-color: sienna;
+    color: white;
+}
+.wraper{
+    display: flex;
+}

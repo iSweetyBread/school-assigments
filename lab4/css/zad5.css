@@ -1,0 +1,28 @@
+header{
+    width: 100%;
+    text-align: center;
+    height: 100px;
+    background-color: aliceblue;
+    border-radius: 25%;
+}
+h1{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding-top: 25px;
+}
+td{
+    width: 100px;
+    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    background-color: white;
+    img{
+        margin: auto;
+        display: block;
+    }
+}
+table{
+    margin: auto;
+    background-color: black;
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularz rejestracyjny</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .first{
+            display: flex;
+            flex-direction: column;
+        }
+        .first_1{
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 20px;
+            input{
+                width: 500px;
+            }
+        }
+        .first_2{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .first_2_inputs{
+            display: flex;
+            flex-direction: column;
+            input{
+                width: 500px;
+            }
+        }
+        .first_2_label{
+            justify-content: flex-start;
+            width: 120px;
+        }
+        .first_1_label{
+            width: 120px;
+        }
+        .text_special{
+            width: 300px;
+            height: 150px;
+        }
+        span{
+            color: red;
+            font-weight: bold;
+        }
+        header{
+            background-color: rgb(34, 130, 255);
+            color: white;
+            padding: 10px;
+        }
+        form{
+            margin: 50px;
+        }
+        .aaa{
+            margin-top: 50px;
+            margin-left: 30px;
+        }
+        label{
+            font-weight: bold;
+        }
+        .label_other{
+            font-weight: normal;
+        }
+        .part{
+            margin-top: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid black;
+        }
+        .btn{
+            padding: 7px;
+            border-radius: 0%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>formularz rejestracyjny</h1>
+    </header>
+    <main>
+        <p class="aaa"><span>(*)</span> - pola obowiązkowe</p>
+        <form action="">
+            <div class="first part" >
+                <div class="first_1">
+                    <div class="first_1_label">
+                        <label for="nazwisko">Nazwisko:<span>*</span></label>
+                    </div>
+                    <input type="text" id="nazwisko" name="nazwisko" placeholder="nazwisko">
+                </div>
+                <div class="first_1">
+                    <div class="first_1_label">
+                        <label for="imie">Imię:<span>*</span></label>
+                    </div>
+                    <input type="text" id="imie" name="imie" placeholder="imię">
+                </div>
+                <div class="first_2">
+                    <div class="first_2_label">
+                        <label for="adres">Adres:<span>*</span></label>
+                    </div>
+                    <div class="first_2_inputs">
+                        <label class="label_other" for="kod">Kod pocztowy:</label>
+                        <input type="text" id="kod" name="kod" placeholder="00-000">
+                        <label class="label_other" for="miasto">Miasto</label>
+                        <input type="text" id="miasto" name="miasto" placeholder="miasto">
+                    </div>
+                </div>
+            </div>
+            <div class="part">
+                <label for="plec">Wybierz płeć:</label>
+                <input type="radio" id="k" name="plec">
+                <label class="label_other" for="k">Kobieta</label>
+                <input type="radio" id="m" name="plec">
+                <label class="label_other" for="m">Mężczyzna</label>
+            </div>
+            <div class="part">
+                <label for="wiek">Podaj przedział wiekowy:</label>
+                <input type="text" id="wiek" name="wiek" placeholder="16-24, 25-39, 40-60, powyżej 60">
+            </div>
+            <div class="part">
+                <label for="mail">Podaj adres e-mail:<span>*</span></label>
+                <input type="email" id="mail" name="mail" placeholder="a@serwer.pl">
+            </div>
+            <div class="part">
+                <label for="">Wykształcenie:</label>
+                <br><br>
+                <div>
+                    <input type="radio" id="pod" name="wyk">
+                    <label class="label_other" for="pod">podstawowe</label>
+                    <br>
+                    <input type="radio" id="sr" name="wyk">
+                    <label class="label_other" for="sr">średnie</label>
+                    <br>
+                    <input type="radio" id="wy" name="wyk">
+                    <label class="label_other" for="wy">wyższe</label>
+                </div>
+            </div>
+            <div class="part">
+                <label for="jez">Wybierz języki:</label>
+                <br><br>
+                <select name="jez" id="jez" multiple>
+                    <option value="angielski">angielski</option>
+                    <option value="niemiecki">niemiecki</option>
+                    <option value="francuski">francuski</option>
+                    <option value="włoski">włoski</option>
+                    <option value="hiszpański">hiszpański</option>
+                    <option value="rosyjski">rosyjski</option>
+                </select>
+                <p><b>Uwaga:</b> <span style="letter-spacing: 2px; color: black; font-weight: normal;">Ctrl</span> pozwala zaznaczyć kilka języków</p>
+            </div>
+            <div class="part">
+                <label for="">Zainteresowania</label>
+                <br><br>
+                <div>
+                    <input  type="checkbox" id="1" name="1">
+                    <label class="label_other" for="1">motoryzacja</label>
+                    <br>
+                    <input type="checkbox" id="2" name="2">
+                    <label class="label_other" for="2">sport</label>
+                    <br>
+                    <input type="checkbox" id="3" name="3">
+                    <label class="label_other" for="3">muzyka</label>
+                    <br>
+                    <input type="checkbox" id="4" name="4">
+                    <label class="label_other" for="4">taniec</label>
+                    <br>
+                    <input type="checkbox" id="5" name="5">
+                    <label class="label_other" for="5">gry</label>
+                    <br>
+                    <input type="checkbox" id="6" name="6">
+                    <label class="label_other" for="6">inne <label class="label_other"for="inne">(podaj jakie):</label><input type="text" id="inne" name="innee"></label>
+                </div>
+            </div>
+            <div class="part">
+                <label for="wpisz">Wpisz swoje uwagi:</label>
+                <br><br>
+                <input class="text_special" type="text" id="wpisz" name="wpisz">
+            </div>
+            <div class="part">
+                <input type="checkbox" id="zgoda" name="zgoda">
+                <label class="label_other" for="zgoda">zgadzam się na przetwarzanie moich danych osobowych</label>
+            </div>
+            <div class="part">
+                <input class="btn" type="submit" value="wyślij formularz">
+                <input class="btn" type="reset" value="wyczyść pola">
+            </div>
+        </form>
+    </main>
+</body>
+</html>

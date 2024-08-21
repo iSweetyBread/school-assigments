@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1, h2, h3{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    text-align: center;
+}
+h1{
+    border-bottom: 1px solid grey;
+}
+h2{
+    border-bottom: 1px solid black;
+}
+#first{
+    display: flex;
+    div{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+#second{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

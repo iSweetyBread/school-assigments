@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zad 3</title>
+    <link rel="stylesheet" href="css\zad3.css">
+</head>
+<body>
+    <h1>Przeliczanie jednostek długości</h1>
+    <h2>z miary na miarę</h2>
+    <h3>Wybierz wariant:</h3>
+    <div id="first">
+        <div>
+            <label for="in">Jednostka wejściowa: </label>
+            <select name="in" id="in">
+                <option value="0.001">Milimetr</option>
+                <option value="0.01">Centymetr</option>
+                <option value="0.1">Decymetr</option>
+                <option value="1">Metr</option>
+                <option value="1000">Kilometr</option>
+                <option value="1852">Mila Morska</option>
+                <option value="1609.344">Mila Lądowa</option>
+                <option value="0.0254">Cal</option>
+                <option value="0.9144">Jard</option>
+                <option value="0.3048">Stopa</option>
+            </select>
+        </div>
+        <div>
+            <label for="num">Podaj wartość: </label>
+            <input type="number" name="num" id="num">
+        </div>
+    </div>
+    <div id="second">
+        <label for="out">Jednostka wyjściowa: </label>
+        <select name="out" id="out">
+            <option value="0.001">Milimetr</option>
+            <option value="0.01">Centymetr</option>
+            <option value="0.1">Decymetr</option>
+            <option value="1">Metr</option>
+            <option value="1000">Kilometr</option>
+            <option value="1852">Mila Morska</option>
+            <option value="1609.344">Mila Lądowa</option>
+            <option value="0.0254">Cal</option>
+            <option value="0.9144">Jard</option>
+            <option value="0.3048">Stopa</option>
+        </select>
+    </div>
+    <button id="res" onclick="res()">Przelicz</button>
+    <p><b id="result"></b></p>
+    <script src="js\zad3.js"></script>
+</body>
+</html>

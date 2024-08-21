@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zad3</title>
+</head>
+<body>
+    <input type="text" id="artykul" onkeypress="longer(event)">
+    <div id="liczba"></div>
+
+    <script>
+        function longer(e){
+            const area = document.getElementById("artykul");
+            const div = document.getElementById("liczba");
+            area.style.width = (area.clientWidth + 1).toString() + "px";
+            if(parseInt(e.key)){
+                div.textContent += e.key;
+            }
+            
+        }
+    </script>
+</body>
+</html>

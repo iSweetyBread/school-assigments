@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zad 2</title>
+    <link rel="stylesheet" href="css\zad2.css">
+</head>
+<body>
+    <div id="first">
+        <table>
+            <tr>
+                <th>Produkt</th>
+                <th>Cena</th>
+                <th>Ilość</th>
+            </tr>
+            <tr>
+                <td>
+                    <textarea id="nazwa_1" cols="30" rows="1" placeholder="nazwa"></textarea>
+                </td>
+                <td>
+                    <textarea id="cena_1" cols="30" rows="1" placeholder="cena"></textarea>
+                </td>
+                <td>
+                    <textarea id="ilosc_1" cols="30" rows="1" placeholder="ilość"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <textarea id="nazwa_2" cols="30" rows="1" placeholder="nazwa"></textarea>
+                </td>
+                <td>
+                    <textarea id="cena_2" cols="30" rows="1" placeholder="cena"></textarea>
+                </td>
+                <td>
+                    <textarea id="ilosc_2" cols="30" rows="1" placeholder="ilość"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <textarea id="nazwa_3" cols="30" rows="1" placeholder="nazwa"></textarea>
+                </td>
+                <td>
+                    <textarea id="cena_3" cols="30" rows="1" placeholder="cena"></textarea>
+                </td>
+                <td>
+                    <textarea id="ilosc_3" cols="30" rows="1" placeholder="ilość"></textarea>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="second">
+        <button onclick="sum()">Oblicz wartość sprzedaży</button>
+        <table id="res">
+            <tr>
+                <th>Produkt</th>
+                <th>Wartość</th>
+            </tr>
+            <tr>
+                <td>
+                    <p id="res_name_1"></p>
+                </td>
+                <td>
+                    <p id="res_cost_1"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="res_name_2"></p>
+                </td>
+                <td>
+                    <p id="res_cost_2"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="res_name_3"></p>
+                </td>
+                <td>
+                    <p id="res_cost_3"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Razem</p>
+                </td>
+                <td>
+                    <p id="res_cost_4"></p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="js\zad2.js"></script>
+</body>
+</html>

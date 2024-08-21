@@ -1,0 +1,39 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0%;
+}
+table{
+    border: 1px solid gray;
+}
+#first{
+    margin-top: 10px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#second{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#res{
+    margin-top: 10px;
+    justify-self: center;
+    border-collapse: collapse;
+    td{
+        border: 1px solid black;
+        height: 50px;
+        max-height: 50px;
+        width: 70px;
+        max-width: 70px;
+        padding-left: 3px;
+        padding-top: 0%;
+        padding-bottom: 0%;
+    }
+}

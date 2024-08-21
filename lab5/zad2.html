@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zad2</title>
+    <style>
+        .wyroznione{
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+    <p class="wyroznione" ondblclick="click_1()" onclick="click_2()" onmouseover="loger()">Podkarpacie</p>
+    <script>
+        function click_1(){
+            const pp = document.getElementsByClassName("wyroznione").item(0);
+            pp.textContent = "Powiat Rzeszowski";
+        }
+
+        function click_2(){
+            const pp = document.getElementsByClassName("wyroznione").item(0);
+            pp.textContent = "Rzeszów";
+        }
+
+        function loger(){
+            const ppp = document.getElementsByClassName("wyroznione").item(0);
+            console.log(ppp.textContent);
+        }
+    </script>
+</body>
+</html>

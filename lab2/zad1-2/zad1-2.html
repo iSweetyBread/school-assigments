@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div { padding: 10px; background-color: lightskyblue; }
+        div div { padding: 10px; background-color: white;}
+        div div div { background-color: blanchedalmond; text-align: center; }
+        header div, header nav { padding: 10px; background-color: white; text-align: center; }
+        footer { background-color: blanchedalmond; text-align: right;}
+        body { font-family: "Arial", Times, serif; }
+        .link { background-color: gray; color: white; padding: 5px; }
+        .link:hover { background-color: white; color: gray; padding: 5px; transition: 0.2s ease; }
+        img { opacity: 0.5; padding: 10px; background-color: gray; }
+        img:hover { opacity: 1.0; background-color: navy; transition: 0.5s ease; }
+        .logo, .menu{
+            text-align: center;
+        }
+        .pic{
+            width: 200px;
+            height: 200px;
+        }
+        </style>
+</head>
+<body>
+    <div>
+        <div class="logo">
+            <img style="height: 100px; width: 100px;" src="\img\europa.jpg" alt="ops">
+            <p>Test online page</p>
+        </div>
+        <div class="menu">
+            <a class="link" href="https://wsiz.edu.pl/">WSIZ</a>
+            <a class="link" href="https://www.google.pl/?hl=pl">Google</a>
+            <a class="link" href="https://pl.wikipedia.org/wiki/Wiki">Wikipedia</a>
+        </div>
+    </div>
+    <div>
+        <div class="main">
+            <div>
+                <input type="radio" id="1" name="radiobtn">
+                <label for="1">Blue</label>
+                <input type="radio" id="2" name="radiobtn">
+                <label for="2">Red</label>
+                <input type="radio" id="3" name="radiobtn">
+                <label for="3">Green</label>
+                <input type="radio" id="4" name="radiobtn">
+                <label for="4">Yellow</label>
+            </div>
+            <div>
+                <input type="radio" id="11" name="anbtn">
+                <label for="11">Dog</label>
+                <input type="radio" id="22" name="anbtn">
+                <label for="22">Rat</label>
+                <input type="radio" id="33" name="anbtn">
+                <label for="33">Bird</label>
+                <input type="radio" id="44" name="anbtn">
+                <label for="44">Cat</label>
+            </div>
+            <div>
+                <div>
+                    <input type="text" id="text">
+                    <label for="text">Write something here</label>
+                </div>
+                <div>
+                    <input type="range" id="range">
+                    <label for="range">Choose</label>
+                </div>
+                <div>
+                    <input type="date" id="date">
+                    <label for="date">Choose date</label>
+                </div>
+            </div>
+        </div>
+        <div class="stopka">
+            <img class="pic" src="\img\afryka.jpg" alt="afryka">
+            <img class="pic" src="\img\ameryka_pld.jpg" alt="ameryka">
+            <img class="pic" src="\img\ameryka_pln.jpg" alt="ameryka1">
+            <a href="https://pl.wikipedia.org/wiki/Australia"><img class="pic" src="\img\australia.jpg" alt="australia"></a>
+        </div>        
+    </div>
+    <footer>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </footer>
+</body>
+</html>

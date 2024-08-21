@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zad 4</title>
+    <link rel="stylesheet" href="css\zad4.css">
+</head>
+<body>
+    <div class="wrap">
+        <div id="wrap_a1">
+            <label for="back">Kolor tła</label>
+            <input type="color" name="back" id="back" value="#ffffff">
+        </div>
+        <div id="wrap_a2">
+            <label for="text">Kolor tekstu</label>
+            <input type="color" name="text" id="text" value="#000000">
+        </div>
+    </div>
+    <div  class="wrap" id="wrap_b">
+        <h1 id="count">0000</h1>
+    </div>
+    <div class="wrap" id="wrap_c">
+        <div class="pseudo_btn" onclick="counter_plus()">
+            <h1>+</h1>
+        </div>
+        <div id="wrap_c1">
+            <div class="pseudo_btn" onclick="counter_minus()">
+                <h1>-</h1>
+            </div>
+            <div class="pseudo_btn" onclick="reset()">
+                <h1>↺</h1>
+            </div>
+        </div>
+    </div>
+    <script src="js\zad4.js"></script>
+</body>
+</html>

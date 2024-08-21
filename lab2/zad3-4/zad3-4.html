@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header, main, footer{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .gif{
+            position: absolute;
+            margin-left: 5%;
+        }
+        .title{
+            background-color: green;
+            text-align: center;
+            padding-top: 1px;
+            padding-bottom: 1px;
+            color: white;
+        }
+        .subtitle{
+            background-color: white;
+            text-align: center;
+            padding-top: 1px;
+            padding-bottom: 1px;
+            color: green;
+        }
+        div h2{
+            color: green;
+            margin-top: 40px;
+        }
+        .content{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .pic img{
+            width: 300px;
+            height: 200px;
+        }
+        .content_title{
+            padding-left: 10px;
+            background-color: green;
+            align-self: flex-start;
+            width: 100%;
+            color: white;
+        }
+        .content_cont{
+            align-self: flex-end;
+            display: flex;
+            flex-direction: row;
+            margin: 2% 10%;
+        }
+        .content_cont div{
+            margin-right: 20px;
+        }
+        footer{
+            background-color: green;
+            text-align: end;
+            height: fit-content;
+        }
+        footer p{
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-right: 10px;
+        }
+        footer a{
+            align-self: flex-start;
+        }
+        .menu{
+            background-color: lightgreen;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 30px;
+        }
+        .menu p{
+            flex-grow: 1;
+            flex-basis: 0;
+            padding: 0px 5px;
+            text-align: center;
+            border-left: 1px solid grey;
+            border-right: 1px solid grey;
+            font-size: small;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(74, 145, 46);
+        }
+        .gora{
+            text-align: end;
+        }
+    </style>
+</head>
+<body>
+    <header id="top">
+        <div>
+            <img class="gif" src="\img\ziemia.gif" alt="">
+        </div>
+        <div class="title">
+            <h1>Podróż dookoła świata</h1>
+        </div>
+        <div class="subtitle">
+            <p><b>Wybieramy się w podróż dookoła świata</b></p>
+        </div>
+        <div>
+            <h2>Zwiedzamy kontynenty</h2>
+        </div>
+        <div class="menu">
+            <p><a href="#1">Afryka</a></p>
+            <p><a href="#2">Azja</a></p>
+            <p><a href="#3">Australia</a></p>
+            <p><a href="#4">Ameryka Południowa</a></p>
+            <p><a href="#5">Ameryka Północna</a></p>
+            <p><a href="#6">Europa</a></p>
+        </div>
+    </header>
+    <main>
+        <div class="content" id="1">
+            <div class="content_title"><p><b>Zwiedzamy Afrykę</b></p></div>
+            <div class="content_cont">
+                <div class="pic">
+                    <img src="\img\afryka.jpg" alt="">
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi id modi, facilis minima iste culpa? Atque ratione ad necessitatibus. Sequi.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit nesciunt ea itaque odit unde sequi dolor maxime eaque!</p>
+                </div>
+            </div>
+        </div>
+        <div class="content" id="2">
+            <div class="content_title"><p><b>Jedziemy do Azji</b></p></div>
+            <div class="content_cont">
+                <div class="pic">
+                    <img src="\img\azja.jpg" alt="">
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi id modi, facilis minima iste culpa? Atque ratione ad necessitatibus. Sequi.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit nesciunt ea itaque odit unde sequi dolor maxime eaque!</p>
+                </div>
+            </div>
+        </div>
+        <div class="content" id="3">
+            <div class="content_title"><p><b>Płyniemy do Australii</b></p></div>
+            <div class="content_cont">
+                <div class="pic">
+                    <img src="\img\australia.jpg" alt="">
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi id modi, facilis minima iste culpa? Atque ratione ad necessitatibus. Sequi.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit nesciunt ea itaque odit unde sequi dolor maxime eaque!</p>
+                </div>
+            </div>
+        </div>
+        <div class="content" id="4">
+            <div class="content_title"><p><b>Teraz odwiedzamy Amerykę Południową</b></p></div>
+            <div class="content_cont">
+                <div class="pic">
+                    <img src="\img\ameryka_pld.jpg" alt="">
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi id modi, facilis minima iste culpa? Atque ratione ad necessitatibus. Sequi.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit nesciunt ea itaque odit unde sequi dolor maxime eaque!</p>
+                </div>
+            </div>
+        </div>
+        <div class="content" id="5">
+            <div class="content_title"><p><b>Podążamy do Ameryki Północnej</b></p></div>
+            <div class="content_cont">
+                <div class="pic">
+                    <img src="\img\ameryka_pln.jpg" alt="">
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi id modi, facilis minima iste culpa? Atque ratione ad necessitatibus. Sequi.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit nesciunt ea itaque odit unde sequi dolor maxime eaque!</p>
+                </div>
+            </div>
+        </div>
+        <div class="content" id="6">
+            <div class="content_title"><p><b>Wracamy do Europy</b></p></div>
+            <div class="content_cont">
+                <div class="pic">
+                    <img src="\img\europa.jpg" alt="">
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi id modi, facilis minima iste culpa? Atque ratione ad necessitatibus. Sequi.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit nesciunt ea itaque odit unde sequi dolor maxime eaque!</p>
+                </div>
+            </div>
+        </div>
+        <div class="gora"><a href="#top">Do góry</a></div>
+    </main>
+    <footer>
+        <div><p>Hlib Hospodarysko w69976</p></div>
+    </footer>
+</body>
+</html>
